@@ -1,0 +1,320 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(imagenes/Background-cafe.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header {
+    padding: 10px 20px;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    position: relative; /* Cambia a fixed para que se quede en la parte superior */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: transparent; /* Asegúrate de que este valor no sobrescriba el color de fondo del header */
+    border-radius: 10px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ff8623 !important; /* Cambia este valor al color que prefieras */
+    margin-left: 20px;
+}
+
+.navbar-nav {
+    display: flex;
+    margin-left: auto;
+    gap: 20px;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f1c40f;
+}
+
+
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    z-index: 2; /* Asegúrate de que esté por encima del fondo */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    z-index: 2; /* Asegúrate de que esté por encima del fondo */
+}
+
+.catalog {
+    padding: 60px 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.catalog h2 {
+    font-size: 2rem;
+    color: #f3f2f2;
+    margin-bottom: 30px;
+}
+
+.catalog-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 30px; /* Aumenta este valor para más separación */
+}
+
+.catalog-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.catalog-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-item img {
+    width: 100%;
+    height: 200px; /* Ajusta esta altura según tus necesidades */
+    object-fit: cover; /* Esto mantiene la proporción de la imagen y cubre el área asignada */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.catalog-item h3 {
+    margin-top: 10px;
+    color: #4b2e1d;
+    font-size: 1.2rem;
+}
+
+.catalog-item p {
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #4b2e1d;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+.instagram-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #E1306C;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.instagram-btn:hover {
+    background-color: #bc2a8d;
+}
+
+.bebidas {
+    padding: 60px 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.bebidas h2 {
+    font-size: 2rem;
+    color: #f3f2f2;
+    margin-bottom: 30px; /* Ajusta este valor según sea necesario */
+}
+
+.bebidas-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.bebidas-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bebidas-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.bebidas-item img {
+    width: 100%;
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bebidas-item h3 {
+    margin-top: 10px;
+    color: #4b2e1d;
+    font-size: 1.2rem;
+}
+
+.bebidas-item p {
+    font-size: 1rem;
+}
+
+.tragos {
+    padding: 60px 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.tragos h2 {
+    font-size: 2rem;
+    color: #f3f2f2;
+    margin-bottom: 60px; /* Ajusta este valor según sea necesario */
+}
+
+.tragos-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tragos-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tragos-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tragos-item img {
+    width: 100%;
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tragos-item h3 {
+    margin-top: 10px;
+    color: #4b2e1d;
+    font-size: 1.2rem;
+}
+
+.tragos-item p {
+    font-size: 1rem;
+}
+
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 30px;
+        align-items: center;
+    }
+
+    .catalog-items {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .catalog-item {
+        width: 30%;
+    }
+
+    .hero h2 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .catalog h2 {
+        font-size: 1.5rem;
+    }
+
+    .catalog-item h3 {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+
+    .instagram-btn {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+}

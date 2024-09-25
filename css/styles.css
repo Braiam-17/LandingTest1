@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(imagenes/Background-cafe.jpg);
+    background-image: url(../imagenes/Background-cafe.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -164,105 +164,6 @@ footer p {
 
 .instagram-btn:hover {
     background-color: #bc2a8d;
-}
-
-.bebidas {
-    padding: 60px 20px;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.bebidas h2 {
-    font-size: 2rem;
-    color: #f3f2f2;
-    margin-bottom: 30px; /* Ajusta este valor según sea necesario */
-}
-
-.bebidas-items {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-top: 30px;
-}
-
-.bebidas-item {
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: white;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.bebidas-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.bebidas-item img {
-    width: 100%;
-    height: 200px; /* Ajusta la altura según tus necesidades */
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.bebidas-item h3 {
-    margin-top: 10px;
-    color: #4b2e1d;
-    font-size: 1.2rem;
-}
-
-.bebidas-item p {
-    font-size: 1rem;
-}
-
-.tragos {
-    padding: 60px 20px;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.tragos h2 {
-    font-size: 2rem;
-    color: #f3f2f2;
-    margin-bottom: 60px; /* Ajusta este valor según sea necesario */
-}
-
-.tragos-items {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.tragos-item {
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: white;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.tragos-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.tragos-item img {
-    width: 100%;
-    height: 200px; /* Ajusta la altura según tus necesidades */
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.tragos-item h3 {
-    margin-top: 10px;
-    color: #4b2e1d;
-    font-size: 1.2rem;
-}
-
-.tragos-item p {
-    font-size: 1rem;
 }
 
 

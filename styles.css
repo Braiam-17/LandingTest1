@@ -66,6 +66,19 @@ header {
     padding: 20px;
 }
 
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(imagenes/Background-cafe.jpg); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
 .hero::after {
     content: '';
     position: absolute;
@@ -319,3 +332,10 @@ footer p {
         padding: 8px 15px;
     }
 }
+    @media screen and (min-device-pixel-ratio: 2) and (max-width: 1024px) {
+        body {
+        background-attachment: scroll; /* Desactivar el attachment fixed */
+        }
+    }
+    
+  

@@ -265,7 +265,10 @@ footer p {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 768px) {  
+    body{
+        background-image: url(imagenes/Background-cafe.jpg);
+    }
     header {
         flex-direction: row;
         justify-content: space-between;
@@ -293,6 +296,9 @@ footer p {
 }
 
 @media (max-width: 480px) {
+    body{
+        background-image: url(imagenes/Background-cafe.jpg);
+    }
     .hero h2 {
         font-size: 1.8rem;
     }

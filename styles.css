@@ -267,9 +267,6 @@ footer p {
 
 
 @media (min-width: 768px) {  
-    body{
-        background-image: url(imagenes/Background-cafe.jpg);
-    }
     header {
         flex-direction: row;
         justify-content: space-between;
@@ -299,9 +296,6 @@ footer p {
 @media (max-width: 480px) {
     body{
         background-image: url(imagenes/Background-cafe.jpg);
-        background-size: contain; /* Cambia de 'cover' a 'contain' para evitar que se vea muy ampliada */
-        background-position: center top; /* Ajusta la posición para que se vea mejor en móviles */
-        background-attachment: scroll; /* Para evitar problemas en móviles con parallax */
     }
     .hero h2 {
         font-size: 1.8rem;
@@ -326,20 +320,5 @@ footer p {
     .instagram-btn {
         font-size: 1rem;
         padding: 8px 15px;
-    }
-}
-/* Estilos para pantallas medianas (smartphones más grandes y tablets pequeñas) */
-@media (min-width: 481px) and (max-width: 1024px) {
-    body {
-        background-size: cover; /* La imagen cubre la pantalla */
-        background-position: center;
-    }
-}
-
-/* Estilos específicos para dispositivos como el iPhone 14 Pro Max */
-@media (min-width: 1025px) {
-    body {
-        background-size: cover; /* La imagen cubre toda la pantalla */
-        background-position: center top; /* Para ajustar la imagen en dispositivos grandes */
     }
 }

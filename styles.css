@@ -294,9 +294,6 @@ footer p {
 }
 
 @media (max-width: 480px) {
-    body{
-        background-image: url(imagenes/Background-cafe.jpg);
-    }
     .hero h2 {
         font-size: 1.8rem;
     }
